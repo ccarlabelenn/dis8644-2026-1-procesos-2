@@ -96,8 +96,30 @@ Dato: no son dibujos; son vectores, píxeles, gráficos (en DXF o SVG).
 Bloque de terminales o conector de tornillo, de tipo modular, con soporte de hasta 16 A con 300 Volts AC. Posee un tamaño mediano, además de una separación entre pines de 5 mm (0.2 pulgadas).Es compatible con protoboard.
 ![terminal](./imagenes/terminal.jpeg)
 
+___
+## Encargo 09a
 
+Me costó agarrarle el ritmo a los controles y al proceso de agregar símbolos, modificar sus valores y manejar las líneas. También me confundí bastante al momento de asignar las huellas, porque hay muchísimas opciones y todavía no sé bien cuál utilizar en cada caso, siento que debo ir aprendiendo esos nombres y formatos.
 
+Algo que olvidaba constantemente era apretar la tecla B para cerrar el plano de GND. También tuve dificultades con la gráfica, porque no entendí muy bien por qué se veía tan poco en la vista 3D.
+
+Aun así, en general sentí que anduve bastante bien. El primer circuito lo hice apoyándome en la grabación de la clase, pero el segundo pude hacerlo por mi cuenta, así que siento que avancé bastante.
+
+### Clock generator
+
+![clock](./imagenes/clock.png)
+![clock](./imagenes/clock1.png)
+![clock](./imagenes/clock2.png)
+![clock3](./imagenes/clock3.png)
+
+### MIX
+
+![mix](./imagenes/mix.png)
+![mix](./imagenes/mix1.png)
+![mix](./imagenes/mix2.png)
+![mix](./imagenes/mix3.png)
+
+### Capítulo 1 del libro Hacia una filosofía de la fotografía, de Vilém Flusser
 
 
 
