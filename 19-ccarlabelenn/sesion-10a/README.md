@@ -11,8 +11,6 @@
 
 >  cada componente es un mundo, tienen un montón de propiedades. 
 
----
-
 ## repaso de atajos de teclado — esquemático
 
 | tecla | acción |
@@ -29,8 +27,6 @@
 > - **huella**: espacio físico que ocupa cada componente
 > - **nunca asumir nada**: ctrl + s 
 
----
-
 ## flujo PCB — editor de Placas
 
 ### pasos para diseñar como componente físico:
@@ -40,8 +36,6 @@
 3. click en **"traerme"** para importar el esquemático
 4. presionar **F8** → *actualizar placa desde esquema*
 5. **alt + 3** → visor 3D
-
----
 
 ## contorno de la placa (Edge.Cuts)
 
@@ -60,12 +54,11 @@
 - usar la **herramienta arco**, encontrar punto
 - tecla `E` en un rectángulo da opción de **redondear rectángulo** 
 
----
-
 ## PCB — capas y elementos
 
 - **pista**: por donde viaja la señal eléctrica
 - **via**: es un pequeño agujero metalizado que conecta eléctricamente dos capas distintas de la PCB.
----
 
-> me perdí 
+> me perdí
+
+## encargo 09a
