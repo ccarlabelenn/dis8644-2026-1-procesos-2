@@ -9,3 +9,7 @@ El día de hoy vimos KICADDDD:
 3.	PCB new; un preview de como se verían esos componentes en el mundo real. Tangible y funcional.
 
 Comencemos c: 
+
+## 1.	Dibujar esquemático (Kicad_sch).  
+## 2.	Asociar huellas a símbolos.  
+## 3.	PCB new; un preview de como se verían esos componentes en el mundo real. Tangible y funcional.
