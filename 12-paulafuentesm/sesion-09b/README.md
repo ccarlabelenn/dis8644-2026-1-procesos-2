@@ -7,7 +7,6 @@ Se hizo un repaso de la clase anterior y contestar preguntas que se formaran res
 + se busca en la biblioteca y siempre se abren los 2 ( sistemático y placa) para que al actualizar se integre la placa.
 
 + buscar página los componentes que se quieren buscar buscarlos en la biblioteca ( componentes que ocupamos apro 6,3 mm generalmente)
-+ 
 + Pagina: victronica.cl
 
 **¿Cómo se bucan los chip ?**
