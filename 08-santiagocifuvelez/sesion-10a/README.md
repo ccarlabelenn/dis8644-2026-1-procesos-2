@@ -17,7 +17,6 @@ Ya con estos pasos en cuenta, continuemos con la clase:
 1.	Como abrir archivos de trabajo. 
 2.	Atajos de teclado.
 3.	La pcb (nuestra placa real)
-4.	Encargo para la siguiente clase.
 
 ## 1.	Como abrir archivos de trabajo. 
 Cuando un archivo ya está creado y guardado, se abre desde la extensión:   
@@ -105,5 +104,24 @@ También existe un espaciado mínimo entre pistas, para que no se toquen las una
 **Luego hundimos la letra `B`, se rellena todo:**
 ![img15](https://github.com/santiagocifuvelez/dis8644-2026-1-procesos-2/blob/main/08-santiagocifuvelez/sesion-10a/imagenes/img15.png)
 
+**Aquí ya tenemos todos los GND conectados, ahora vamos a ver si hay algún error, o si algo no está conectado:**
+![img16](https://github.com/santiagocifuvelez/dis8644-2026-1-procesos-2/blob/main/08-santiagocifuvelez/sesion-10a/imagenes/img16.png)
 
-## 4.	Encargo para la siguiente clase.
+**Vamos allí, y luego le hundimos “ejecutar DRC”, para evaluar que todo está bien.**
+![img17](https://github.com/santiagocifuvelez/dis8644-2026-1-procesos-2/blob/main/08-santiagocifuvelez/sesion-10a/imagenes/img17.png)
+
+En este caso todo está bien. Period
+
+Ahora, vamos a abrir unos huequitos para poder integrar nuestra PCB a la superficie.
+
+**Para esto, vamos a nuestro archivo del esquema (SCH)  para a buscar `MountingHole`, que sería nuestro hoyito de montaje, y luego ese lo traemos a nuestro archivo de la PCB.  
+*(recordar asignar huellas, etc.):***
+![img18](https://github.com/santiagocifuvelez/dis8644-2026-1-procesos-2/blob/main/08-santiagocifuvelez/sesion-10a/imagenes/img18.png)
+
+**Listo:**
+![img19](https://github.com/santiagocifuvelez/dis8644-2026-1-procesos-2/blob/main/08-santiagocifuvelez/sesion-10a/imagenes/img19.png)
+
+**Y ya está.**
+![img20](https://github.com/santiagocifuvelez/dis8644-2026-1-procesos-2/blob/main/08-santiagocifuvelez/sesion-10a/imagenes/img20.png)
+
+Byee.
