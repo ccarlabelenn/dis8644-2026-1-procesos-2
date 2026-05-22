@@ -66,9 +66,9 @@ CD LM339:divide el voltaje en 4 tiempos
 
 Cap.4 El acto de fotografiar: En  este capitulo el autor se refiere al usuario como un cazador, pero con algunas tranpas o dificultades la camara ya decidio que es lo que podemos o no podemos capturar, esta es la que nos usa para poder sacar fotos que vienen predeterminadas por el sistema, basicamente dice que para ser un artista es obligar a la maquina a salir de su programacion predeterminada.
 
-Cap.5 La fotografia:
+Cap.5 La fotografia: En este capitulo Flusser nos explica es que...
+la verdad no entendi este capitulo, lo re-lei muchas veces y lo que mas se me quedo marcado es que en la fotografia lo valioso es la informacion y no el objeto fisico
 
-**alabras que no conozco:**
+**Palabras que no conozco:**
 
 - tundra: ecosistema o bioma que es muy frio
--
