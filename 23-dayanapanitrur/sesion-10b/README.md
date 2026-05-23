@@ -1,5 +1,7 @@
 # sesion-10b
 
+## Primeras pruebas de secuenciador
+
 Misaa nos recomendó el chip 4040.
 El día de hoy estuvimos haciendo las primeras pruebas con este.
 El secuenciador nos da la posibilidad de hacernos cargo de cuando suena, y de cuanto (regular el voltaje).
