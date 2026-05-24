@@ -4,7 +4,7 @@ Martes 12 de mayo de 2026
 
 La clase fue online debido al incendio.
 
-Continuación de aprendizaje en KiCAD.
+- Continuación de aprendizaje en KiCAD.
 
 ### Atajos importantes
 
@@ -152,3 +152,10 @@ Esta herramienta sirve para detectar errores en la placa antes de enviarla a fab
   
 Después de eso, KiCad muestra una lista con los posibles errores encontrados.
 
+---
+
+- encargo-09a
+  
+esquemáticos y PCB en KiCad
+
+cada estudiante debe tomar 2 de las 4 secciones distintas del sintetizador realizado en el proyecto 1, y crear un proyecto en KiCad por cada una, que contenga tanto el esquemático y la PCB de cada sección.
