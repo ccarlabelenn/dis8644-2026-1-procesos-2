@@ -14,3 +14,6 @@
 </p>
 <!-- Aqui termina el gif del circuito -->
 
+![Huella 1](./imagenes/huella01.jpeg)
+
+![Huella 2](./imagenes/huella02.jpeg)
