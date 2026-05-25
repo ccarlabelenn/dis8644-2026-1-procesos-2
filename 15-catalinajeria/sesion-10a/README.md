@@ -1,27 +1,25 @@
-# 🌙 Clase 10a — Flusser, imágenes técnicas y control de voltaje
+# Clase 10a — Flusser, imágenes técnicas y control de voltaje
 
-> **Bitácora de clase — 19 de mayo de 2026**  
-> En esta sesión conectamos las ideas de Flusser sobre imágenes técnicas y aparatos con una charla artística sobre medición, escaneo 3D y sistemas inestables. Al final también revisamos conceptos electrónicos útiles para nuestros proyectos sonoros.
-
----
-
-## ✨ Resumen general de la clase
-
-En esta clase seguimos trabajando algunas ideas de **Vilém Flusser**, especialmente las relacionadas con la **imagen técnica**, los **aparatos** y la forma en que estos median nuestra relación con el mundo. Una de las ideas centrales fue que no vemos las cosas de forma completamente directa, sino a través de imágenes, textos, aparatos y sistemas que ordenan nuestra manera de mirar.
-
-A partir de Flusser, se comentó que las imágenes y los textos son formas de construir mundo. Las imágenes tradicionales se desplazaron hacia espacios como los museos, mientras que los textos se dividieron hacia distintos lugares: la ciencia, los medios escritos, los diarios o los textos más cotidianos y masivos. Esto se relaciona con la idea de que cada sistema intenta representar la realidad, pero también la transforma.
-
-Después tuvimos una charla sobre el proyecto **For Want of (Not) Measuring**, que trabaja con la medición, los sistemas inestables y las formas en que usamos herramientas técnicas para interpretar el mundo. El proyecto se inició en 2022 y ha ido creciendo a través de distintas exposiciones, colaboraciones y publicaciones.
-
-La charla conectó muy bien con Flusser, porque mostraba cómo un aparato técnico, como un escáner 3D, no solo mide la realidad, sino que también produce una nueva imagen de ella. En vez de entregar una verdad absoluta, el aparato genera una versión del mundo hecha de puntos, cortes, superficies y errores. Esto hace visible que incluso los sistemas que parecen exactos pueden ser inestables.
-
-Finalmente, la clase terminó con un repaso más técnico sobre control de voltaje, frecuencia y algunos chips que podemos usar en nuestros proyectos sonoros. Se revisaron componentes como el **4046**, el **4040**, el **4093**, el **555**, multiplexores y amplificadores operacionales.
+**Fecha:** martes 19 de mayo de 2026  
+**Tema:** Flusser, aparatos, medición, escaneo 3D y repaso de chips
 
 ---
 
-## 📖 Repaso de Flusser
+## Resumen general de la clase
 
-Durante la primera parte de la clase se retomaron ideas del libro **Hacia una filosofía de la fotografía**. Principalmente se habló de tres conceptos:
+En esta clase seguimos viendo algunas ideas de **Vilém Flusser**, sobre todo las que tienen que ver con las imágenes técnicas, los aparatos y la forma en que estos cambian nuestra manera de mirar el mundo.
+
+Una de las ideas que más se repitió fue que no vemos las cosas de forma totalmente directa. Muchas veces vemos el mundo a través de imágenes, textos, cámaras, escáneres, pantallas o aparatos que ordenan la información por nosotras. Entonces, lo que creemos que es “la realidad” también está mediado por las herramientas que usamos para observarla.
+
+También tuvimos una charla sobre el proyecto **For Want of (Not) Measuring**, que trabaja con la medición, los sistemas inestables, el escaneo 3D y la forma en que los aparatos pueden registrar el mundo. Me pareció interesante porque la charla no hablaba solo de medir cosas, sino de cuestionar qué tan exactos son realmente esos sistemas que usamos para entender la realidad.
+
+Al final de la clase también hicimos un repaso más técnico sobre control de voltaje, frecuencia y algunos chips que podrían servir para nuestros proyectos sonoros, como el **4046**, **4040**, **4093**, **555**, multiplexores y algunos amplificadores operacionales.
+
+---
+
+## Repaso de Flusser
+
+Durante la primera parte de la clase se retomaron ideas del libro **Hacia una filosofía de la fotografía**. Los conceptos principales fueron:
 
 ```text
 Imagen
@@ -29,191 +27,173 @@ Imagen técnica
 Aparato
 ```
 
-Flusser plantea que las imágenes y los textos no son simplemente copias del mundo, sino formas de interpretarlo. Esto significa que nuestra relación con la realidad siempre está mediada por códigos, símbolos y aparatos.
+Por lo que entendí, Flusser plantea que las imágenes y los textos no son simplemente una copia del mundo, sino formas de interpretarlo. O sea, cuando miramos una imagen, no estamos viendo el mundo tal cual es, sino una versión del mundo construida desde cierto sistema.
 
-Una idea importante fue que debemos intentar ver las cosas como son, pero entendiendo que muchas veces las vemos a través de imágenes o textos. Es decir, no accedemos al mundo de forma pura, sino mediante sistemas que lo organizan por nosotras.
-
----
-
-## 🖼️ Imagen, texto y mundo
-
-Según lo comentado en clase, las imágenes y los textos fueron ocupando distintos lugares dentro de la cultura.
+También se habló de que las imágenes tradicionales y los textos fueron tomando distintos lugares dentro de la cultura. Las imágenes se fueron más hacia el museo y el arte, mientras que los textos se fueron hacia la ciencia, los diarios, los medios y otros espacios más cotidianos.
 
 | Elemento | Lugar o función | Valor asociado |
 |---|---|---|
 | Imagen tradicional | Museo / arte | Belleza |
 | Texto científico | Ciencia | Verdad |
-| Texto barato o masivo | Diario, celular, medios cotidianos | Utilidad / consumo |
+| Texto barato o masivo | Diario, celular, medios cotidianos | Información rápida o consumo |
 
-Esta separación muestra cómo la cultura organiza distintas formas de representar la realidad. Las imágenes pueden quedar asociadas a lo artístico, los textos científicos a la verdad y los textos masivos a la circulación rápida de información.
-
-Desde Flusser, esto es importante porque las imágenes técnicas aparecen como una nueva forma de reunir o transformar esas relaciones.
+Esto se relaciona con la aparición de las imágenes técnicas, porque estas intentan volver a mezclar o transformar esa relación entre imagen, texto y mundo.
 
 ---
 
-## 📷 Aparato como caja negra
+## El aparato como caja negra
 
 Uno de los conceptos más importantes fue el de **caja negra**.
 
-Un aparato puede entenderse como una caja negra porque recibe una entrada, realiza un proceso interno que no siempre comprendemos y entrega una salida.
+Un aparato puede entenderse como una caja negra porque recibe una entrada, hace algo internamente que no siempre entendemos y después entrega una salida.
 
-```mermaid
-flowchart LR
-    A[Input / Entrada] --> B[Caja negra / Aparato]
-    B --> C[Output / Salida]
+```text
+Entrada → Aparato → Salida
 ```
 
-En el caso de una cámara:
+Por ejemplo, en el caso de una cámara:
 
 ```text
 Mundo exterior → Cámara → Imagen técnica
 ```
 
-La cámara parece mostrarnos el mundo tal como es, pero en realidad produce una versión limitada y construida de ese mundo. La imagen resultante depende del aparato, de su programación, de sus límites técnicos y de la forma en que lo usamos.
+La cámara parece mostrarnos el mundo como si fuera algo directo y objetivo, pero en realidad produce una versión limitada del mundo. Esa imagen depende del aparato, de su programa, de sus posibilidades técnicas y también de cómo lo usamos.
 
-Esto también se puede relacionar con nuestro imaginario sonoro y musical: muchas veces construimos nuestra idea del sonido a partir de los aparatos que usamos para producirlo, modificarlo o escucharlo.
-
----
-
-## 🎤 Charla — *For Want of (Not) Measuring*
-
-La charla trató sobre un proyecto iniciado en **2022**, que nació desde la intersección entre el trabajo de distintas personas creadoras. Con el tiempo, el proyecto se expandió hacia nuevas exposiciones, colaboraciones y publicaciones.
-
-Uno de los temas principales fue la **medición**. El proyecto se pregunta qué pasa cuando usamos sistemas de medición para entender la realidad, pero también qué ocurre cuando decidimos no usarlos o cuando los usamos de maneras no convencionales.
-
-Me llamó la atención que la charla no trataba solo sobre medir cosas, sino sobre cuestionar la confianza que tenemos en los sistemas que parecen exactos. A veces pensamos que una grilla, una medida o un escáner muestran la realidad de forma objetiva, pero al mirar más de cerca aparecen errores, diferencias, inestabilidad y posibilidades creativas.
+Esto también se puede conectar con el sonido, porque nuestro imaginario sonoro o musical muchas veces se construye a partir de aparatos. Por ejemplo, un sintetizador, un chip o un parlante también hacen que escuchemos el mundo de cierta forma.
 
 ---
 
-## ⚖️ Medir el mundo
+## Charla — For Want of (Not) Measuring
 
-En la charla se mencionó una historia de hace aproximadamente **300 años**, cuando un grupo de personas intentó calcular el peso del mundo. Para hacerlo, subieron a una montaña en Escocia con instrumentos como péndulos y telescopios.
+La charla trató sobre un proyecto que comenzó en **2022** y que nació desde el cruce entre el trabajo de distintas personas creadoras. Con el tiempo, el proyecto fue creciendo y se convirtió en varias exposiciones, publicaciones y colaboraciones.
 
-Esta historia servía como punto de partida para pensar en la medición como una práctica humana. Medir parece algo exacto, pero también depende de herramientas, contextos, errores, interpretaciones y decisiones.
+El tema principal era la **medición**. El proyecto se pregunta qué pasa cuando usamos sistemas de medición para entender la vida y el mundo, pero también qué pasa cuando esos sistemas no son tan estables como parecen.
 
-La medición no es solamente técnica. También puede ser simbólica, política, artística y cultural.
+Me llamó la atención que no se trataba solo de medir por medir, sino de pensar qué significa medir. A veces confiamos mucho en los sistemas exactos, como las grillas, los escáneres o los números, pero cuando se miran con más atención aparecen errores, diferencias y cosas que no calzan tan perfectamente.
 
 ---
 
-## 🧊 Sistemas inestables
+## Medir el mundo
 
-Uno de los conceptos que más apareció fue el de **sistemas inestables**.
+En la charla se mencionó una historia de hace aproximadamente **300 años**, cuando un grupo de personas intentó calcular el peso del mundo. Para eso subieron a una montaña en Escocia usando instrumentos como péndulos y telescopios.
 
-La charla planteaba que algunos sistemas parecen estables porque tienen reglas, medidas o estructuras claras. Sin embargo, cuando se observan con más atención, se vuelven inestables.
+Esta historia servía para mostrar que medir siempre ha sido una forma de intentar entender el mundo. Pero también muestra que la medición depende de herramientas, contextos, errores y decisiones humanas.
 
-Un ejemplo de esto es la **grilla**. A simple vista parece una estructura perfecta, cuadrada y ordenada. Pero dentro del proyecto se entiende como algo simbólico: una estructura que intenta ordenar el mundo, aunque el mundo real no siempre se deja ordenar perfectamente.
+Entonces medir no es solo algo técnico. También puede tener una parte simbólica, artística, cultural o incluso política.
+
+---
+
+## Sistemas inestables
+
+Otro concepto importante fue el de **sistemas inestables**.
+
+La charla mostraba que algunos sistemas parecen muy ordenados y exactos, pero al mirarlos de cerca se vuelven más inestables. Un ejemplo de eso era la **grilla**. Una grilla parece perfecta, cuadrada y controlada, pero igual representa una forma de ordenar algo que en realidad puede ser mucho más cambiante.
 
 ```text
 Grilla = orden aparente
 Mundo real = movimiento, error, cambio e inestabilidad
 ```
 
-Esta idea se conecta con Flusser porque los aparatos también ordenan el mundo, pero no lo muestran de manera neutral.
+Esto se conecta con Flusser porque los aparatos también ordenan el mundo, pero no lo hacen de manera neutral. Siempre muestran una versión del mundo, no el mundo completo.
 
 ---
 
-## 🖨️ Escáner, láser y nube de puntos
+## Escáner, láser y nube de puntos
 
-Una parte importante de la charla fue la explicación del uso de un **escáner 3D**. Este aparato utiliza un láser que choca con el entorno físico y registra información del espacio.
+Una parte importante de la charla fue cuando explicaron el uso de un **escáner 3D**. Este aparato usa un láser que choca con el entorno físico y registra puntos del espacio.
 
-El escáner no captura el mundo como una continuidad perfecta, sino como una gran cantidad de puntos. Cada punto corresponde a un impacto del láser contra una superficie.
+El escáner no captura el mundo como una superficie continua, sino como una gran cantidad de puntos. Cada punto representa un impacto del láser contra una superficie.
 
-A esta recopilación se le llama:
+A eso se le llama:
 
 ```text
 Nube de puntos
 ```
 
-La nube de puntos es interesante porque parece mostrar el mundo de forma muy precisa, pero en realidad es una reconstrucción fragmentada. El mundo real es continuo, mientras que el escaneo lo transforma en puntos separados.
+La nube de puntos parece muy precisa, pero en realidad es una reconstrucción fragmentada del mundo. El mundo real es continuo, pero el escáner lo transforma en puntos separados.
 
-```mermaid
-flowchart TD
-    A[Mundo físico] --> B[Láser del escáner]
-    B --> C[Impactos sobre superficies]
-    C --> D[Nube de puntos]
-    D --> E[Modelo digital]
+```text
+Mundo físico → Láser → Puntos → Nube de puntos → Modelo digital
 ```
 
-Esto se relaciona con la imagen técnica, porque el escáner no solo registra la realidad: la transforma en un modelo digital producido por un aparato.
+Esto se parece mucho a la idea de imagen técnica, porque el escáner no solo registra la realidad: la transforma en un modelo producido por un aparato.
 
 ---
 
-## 🌳 El árbol como red viva
+## El árbol como red viva
 
-Uno de los ejemplos más interesantes fue el escaneo de un árbol de más de **300 años**. En lugar de entender el árbol como un objeto sólido, se propuso verlo como una **red viva**.
+Uno de los ejemplos que más me llamó la atención fue el escaneo de un árbol de más de **300 años**. En vez de verlo solamente como un objeto sólido, se propuso entenderlo como una **red viva**.
 
-El árbol no es una estructura fija. Está vivo, crece, se adapta y responde a las condiciones externas. Sus ramas pueden parecer relámpagos, ondas, frecuencias o sistemas de energía.
+El árbol crece, cambia y se adapta a lo que pasa alrededor. Sus ramas se podían ver como relámpagos, ondas, frecuencias o conexiones. Entonces el árbol deja de ser solo “un árbol” y empieza a verse como un sistema de fuerzas y relaciones.
 
-Esta idea me pareció importante porque cambia la forma de mirar. El árbol deja de ser solo “un árbol” y se convierte en una red de relaciones, fuerzas y tiempos.
+También se habló del tiempo y la escala:
 
-También se habló de la escala temporal:
-
-| Perspectiva | Relación con el tiempo |
+| Perspectiva | Cómo se entiende el tiempo |
 |---|---|
 | Para nosotras | El árbol parece lento |
 | Para el árbol | Las personas somos rápidas |
-| Para una montaña | El árbol también puede parecer rápido |
+| Para una montaña | El árbol también podría parecer rápido |
 
-Al final, todo depende de la escala desde donde se mire.
+Esto me pareció muy interesante porque al final todo depende de desde dónde se mire. Lo que para una persona parece lento, para otra escala puede ser rápido.
 
 ---
 
-## 🌀 Medición, juego y error
+## Medición, juego y error
 
-La herramienta de escaneo suele usarse para tareas técnicas, como medir edificios, registrar espacios o hacer modelos arquitectónicos. Sin embargo, en el proyecto se propone usarla de otra manera: no solo para medir, sino también para jugar, explorar y disfrutar el error.
+Normalmente, herramientas como los escáneres se usan para cosas técnicas, como medir edificios, hacer modelos arquitectónicos o registrar espacios. Pero en este proyecto se usaban de una forma más experimental.
 
-Esto me pareció muy conectado con la idea de Flusser sobre los aparatos. Un aparato puede estar diseñado para cumplir una función técnica, pero también se puede usar de forma creativa, desviada o experimental.
-
-El error deja de ser solamente una falla y puede convertirse en parte del resultado artístico.
+En vez de ocupar el aparato solo para medir correctamente, lo usaban también para jugar, explorar y ver qué errores aparecían.
 
 ```text
-Uso técnico → medir correctamente
-Uso artístico → explorar, jugar, deformar y descubrir
+Uso técnico → medir bien
+Uso artístico → jugar, explorar y aprovechar el error
 ```
 
-También se mencionó que hoy se pueden hacer experimentos similares desde el celular con aplicaciones como:
+Esto se conecta mucho con Flusser, porque un aparato puede estar diseñado para una función específica, pero también se puede usar de otra manera. Ahí aparece la posibilidad creativa: usar el aparato más allá de lo que supuestamente debería hacer.
+
+También se mencionó que hoy se pueden hacer experimentos parecidos desde el celular con aplicaciones como:
 
 ```text
 Polycam
 ```
 
-Esto muestra que algunas tecnologías que antes eran industriales o especializadas ahora están más disponibles para el uso cotidiano y experimental.
+Eso muestra que algunas herramientas que antes parecían muy industriales o especializadas ahora están mucho más cerca de cualquier persona.
 
 ---
 
-## 📚 Publicaciones y archivo
+## Publicaciones y archivo
 
-Otro punto interesante de la charla fue la idea de expandir el concepto de **publicación**. Por cada exposición, el proyecto genera publicaciones que reúnen pensamientos, textos, imágenes, registros y formatos especiales.
+Otro punto interesante fue la idea de expandir el concepto de **publicación**.
 
-Estas publicaciones no son solo catálogos tradicionales. Funcionan como una forma de continuar el diálogo del proyecto y construir un archivo.
+Por cada exposición, el proyecto genera publicaciones con textos, imágenes, pensamientos, registros y otros formatos. No son solo catálogos tradicionales, sino una forma de seguir pensando el proyecto después de la exposición.
 
 ```text
 Exposición → Publicación → Archivo → Nuevas conexiones
 ```
 
-Cada exposición funciona como una nueva versión del proyecto, porque cambia según el lugar, las personas colaboradoras, el contexto y las conversaciones que aparecen.
+Cada exposición funciona como una nueva versión del proyecto, porque cambia según el lugar, las personas que participan y el contexto donde se presenta.
 
 ---
 
-## 🔌 Repaso técnico — Control de voltaje
+## Repaso técnico — Control de voltaje
 
-Después de la charla, se hizo un repaso de conceptos electrónicos útiles para los proyectos.
+Después de la charla, hicimos un repaso de conceptos electrónicos que pueden servir para nuestros proyectos.
 
-Uno de los conceptos principales fue el **control de voltaje**. Para explicarlo se usó una comparación con una copa de agua: mientras más arriba está la copa, más presión tiene el agua.
+Uno de los conceptos principales fue el **control de voltaje**. Para explicarlo se usó el ejemplo de una copa de agua: mientras más arriba está la copa, más presión tiene el agua.
 
-Con el voltaje ocurre algo parecido: el circuito puede trabajar dentro de un rango, por ejemplo entre:
+Con el voltaje pasa algo parecido. El circuito puede trabajar dentro de un rango, por ejemplo entre:
 
 ```text
 0V y 9V
 ```
 
-Ese espacio entre **Ground** y **VCC** puede entenderse como un lienzo donde los cambios de voltaje permiten modificar el comportamiento del circuito.
+Ese espacio entre **Ground** y **VCC** se puede entender como un rango donde el voltaje cambia y modifica el comportamiento del circuito.
 
 ---
 
-## 🎛️ 4046 — Voltaje a frecuencia
+## 4046 — Voltaje a frecuencia
 
-El chip **4046** fue explicado como una caja negra que puede convertir control de voltaje en frecuencia.
+El chip **4046** fue explicado como una caja negra que convierte control de voltaje en frecuencia.
 
 ```text
 Voltaje bajo  → frecuencia más lenta / sonido más grave
@@ -227,11 +207,11 @@ Voltage Controlled Oscillator
 Oscilador controlado por voltaje
 ```
 
-Un VCO cambia su frecuencia dependiendo del voltaje que recibe. Por eso, si se modifica el voltaje de entrada, también cambia el tono o la velocidad de la oscilación.
+Un VCO cambia su frecuencia según el voltaje que recibe. Entonces, si cambia el voltaje de entrada, también cambia el tono o la velocidad de la oscilación.
 
 ---
 
-## 🎚️ 4093, 555 y resistencia a frecuencia
+## 4093, 555 y resistencia a frecuencia
 
 También se mencionó que algunos circuitos permiten convertir cambios de resistencia en cambios de frecuencia.
 
@@ -241,37 +221,34 @@ Por ejemplo:
 4093 + 555 → resistencia a frecuencia
 ```
 
-Esto se puede relacionar con el uso de potenciómetros, porque un potenciómetro es una resistencia variable. Al moverlo, cambia la resistencia y eso puede modificar el comportamiento del circuito, como la frecuencia o el tono.
+Esto se relaciona con el potenciómetro, porque un potenciómetro es una resistencia variable. Al moverlo, cambia la resistencia, y eso puede modificar el comportamiento del circuito, como el tono o la frecuencia.
 
 ---
 
-## 🔢 4040 — Binary counter
+## 4040 — Binary counter
 
 El chip **4040** fue mencionado como un **binary counter** o contador binario.
 
-Este tipo de chip permite dividir o contar pulsos. En términos simples, puede tomar una señal rápida y generar salidas más lentas o divididas.
+Este chip puede dividir o contar pulsos. En simple, puede tomar una señal rápida y generar salidas más lentas.
 
 ```text
 Entrada rápida → salidas divididas / más lentas
 ```
 
-Esto puede servir para generar variaciones rítmicas, patrones o divisiones de una frecuencia principal.
+Esto puede servir para generar patrones, divisiones rítmicas o variaciones a partir de una frecuencia principal.
 
 ---
 
-## 🔀 Multiplexor
+## Multiplexor
 
 También se habló del **multiplexor**.
 
-Un multiplexor permite elegir entre varias señales de entrada y decidir cuál de ellas saldrá por una salida común.
+Un multiplexor permite elegir entre varias señales de entrada y decidir cuál de ellas va a salir por una sola salida.
 
-```mermaid
-flowchart LR
-    A[Entrada 1] --> D[Multiplexor]
-    B[Entrada 2] --> D
-    C[Entrada 3] --> D
-    S[Señal de selección] --> D
-    D --> E[Salida]
+```text
+Entrada 1 ┐
+Entrada 2 ├→ Multiplexor → Salida
+Entrada 3 ┘
 ```
 
 La idea principal es:
@@ -281,122 +258,128 @@ Cada información es un voltaje
 Una señal decide cuál voltaje sale
 ```
 
-Esto puede ser útil para seleccionar entre distintas señales, tonos, controles o comportamientos dentro de un circuito.
+Esto puede servir para seleccionar entre distintos sonidos, tonos, controles o comportamientos dentro de un circuito.
 
 ---
 
-## ⚙️ Otros componentes mencionados
+## Otros componentes mencionados
 
 | Componente | Idea principal |
 |---|---|
 | `4046` | Convierte voltaje en frecuencia. |
-| `4093` | Puede usarse en circuitos que transforman resistencia en frecuencia. |
+| `4093` | Puede usarse para transformar resistencia en frecuencia. |
 | `555` | Temporizador/oscilador útil para generar pulsos. |
 | `4040` | Contador binario que divide señales. |
 | Multiplexor | Selecciona una señal entre varias entradas. |
-| Relé | Actúa como interruptor controlado eléctricamente. |
+| Relé | Funciona como interruptor controlado eléctricamente. |
 | `LM741` | Amplificador operacional. |
 | `LM358` | Amplificador operacional. |
 | `LM324` | Amplificador operacional múltiple. |
 
 ---
 
-## 🌼 Ideas importantes que me quedaron
+## Resumen — Capítulo 4: El acto de fotografiar
 
-- Las imágenes técnicas no muestran el mundo de forma neutra: lo construyen mediante aparatos.
-- Un aparato puede entenderse como una caja negra con entrada y salida.
-- La cámara, el escáner y otros aparatos producen versiones acotadas del mundo.
-- Medir no siempre significa acceder a una verdad absoluta.
-- Los sistemas que parecen estables pueden ser inestables al observarlos con más detalle.
-- Una nube de puntos reconstruye el mundo de manera fragmentada.
-- El error técnico puede abrir posibilidades artísticas.
-- El árbol puede entenderse como una red viva y no solo como un objeto.
-- Todo depende de la escala desde donde se mire.
-- El voltaje puede usarse como una forma de controlar frecuencia.
-- El 4046 funciona como un VCO.
-- El 4040 puede dividir señales y generar salidas más lentas.
-- El multiplexor permite seleccionar entre distintas señales.
+En el capítulo **“El acto de fotografiar”**, Flusser explica que fotografiar no es solamente apretar un botón. El acto de tomar una fotografía ocurre en una relación entre el **fotógrafo** y la **cámara**.
 
----
-
----
-
-## 📸 Resumen — Capítulo 4: El acto de fotografiar
-
-En el capítulo **“El acto de fotografiar”**, Flusser explica que fotografiar no es simplemente apretar un botón o capturar algo del mundo. Para él, el acto fotográfico ocurre dentro de una relación entre el **fotógrafo** y la **cámara**, donde ambos funcionan casi como una sola unidad.
-
-El fotógrafo puede sentir que es libre porque decide qué fotografiar, desde qué ángulo hacerlo y qué tipo de imagen quiere producir. Sin embargo, esa libertad está limitada por el programa de la cámara. La cámara ya tiene inscritas ciertas posibilidades técnicas, y el fotógrafo solo puede moverse dentro de esas posibilidades.
+El fotógrafo puede sentir que es libre porque elige qué fotografiar, desde qué ángulo hacerlo o qué imagen quiere lograr. Pero Flusser dice que esa libertad no es total, porque la cámara ya tiene un programa y ciertas posibilidades definidas. Entonces, el fotógrafo decide, pero decide dentro de lo que el aparato permite.
 
 ```text
 Fotógrafo + Cámara = acto fotográfico
 ```
 
-Esto significa que la cámara no es una herramienta completamente neutra. Aunque parece obedecer al fotógrafo, también lo condiciona. El fotógrafo decide, pero decide dentro de lo que el aparato permite.
+La cámara no es una herramienta completamente neutral. Aunque parece que obedece al fotógrafo, también lo condiciona. Todo lo que se fotografía tiene que transformarse en algo que la cámara pueda capturar.
 
-Flusser plantea que el fotógrafo puede elegir distintos objetos: un rostro, una galaxia, una escena cotidiana o incluso su propio reflejo. Pero todo lo que fotografía debe transformarse en una **situación apta para ser fotografiada**. En ese sentido, el mundo se adapta al programa de la cámara.
+Una idea que me pareció importante es que no existe una fotografía totalmente ingenua. Aunque parezca espontánea, siempre hay decisiones técnicas, culturales y visuales involucradas.
 
-Una idea importante del capítulo es que no existe una fotografía completamente ingenua. Toda fotografía implica conceptos, decisiones y categorías. Incluso cuando alguien cree estar tomando una imagen espontánea, está usando criterios técnicos y culturales que ya están relacionados con el aparato.
-
-El acto de fotografiar se parece a una especie de cacería. El fotógrafo se mueve, busca, duda, encuadra, ajusta y decide. Pero esta búsqueda no ocurre fuera del aparato, sino dentro de sus posibilidades. Por eso, fotografiar es también jugar contra la cámara: intentar producir una imagen que no sea completamente predecible.
+Flusser también compara el acto de fotografiar con una especie de cacería. El fotógrafo busca, se mueve, encuadra, prueba, duda y decide. Pero esa búsqueda ocurre dentro de las posibilidades de la cámara.
 
 ```text
 Fotografiar = buscar posibilidades dentro del programa de la cámara
 ```
 
-En resumen, el capítulo muestra que fotografiar es un acto programado, pero no completamente cerrado. El fotógrafo puede intentar usar el aparato de forma creativa, buscando imágenes nuevas, improbables o informativas. La tensión principal está entre lo que el fotógrafo quiere hacer y lo que la cámara le permite hacer.
+En resumen, fotografiar es un acto que está programado por el aparato, pero que también puede tener espacio para la creatividad. El fotógrafo puede intentar jugar contra la cámara para producir imágenes menos obvias o más inesperadas.
 
 ---
 
-## 🖼️ Resumen — Capítulo 5: La fotografía
+## Resumen — Capítulo 5: La fotografía
 
-En el capítulo **“La fotografía”**, Flusser analiza qué es una fotografía y cómo debería ser interpretada. Parte señalando que las fotografías están en todas partes: revistas, libros, carteles, diarios, cajas, álbumes y objetos cotidianos. Por eso, muchas veces las miramos sin cuestionarlas.
+En el capítulo **“La fotografía”**, Flusser analiza qué es una fotografía y cómo deberíamos mirarla. Parte diciendo que las fotografías están en todas partes: revistas, libros, carteles, diarios, cajas, álbumes y objetos cotidianos.
 
-El observador común suele pensar que una fotografía muestra una situación real que fue capturada automáticamente. Es decir, se cree que la fotografía es una copia directa del mundo. Sin embargo, Flusser dice que esta idea es engañosa.
+Como están tan presentes, muchas veces las miramos sin pensarlas demasiado. Creemos que una fotografía muestra una situación real tal como ocurrió, casi como si fuera una copia directa del mundo. Pero Flusser dice que esa idea es engañosa.
 
-La fotografía no es simplemente una ventana hacia la realidad. Es una imagen técnica producida por un aparato, y por eso contiene conceptos, decisiones y programas.
+La fotografía no es una ventana transparente hacia la realidad. Es una imagen técnica producida por un aparato.
 
 ```text
 Mundo exterior → Cámara → Fotografía
 ```
 
-Uno de los ejemplos más importantes del capítulo es la fotografía en blanco y negro. Flusser explica que el blanco y el negro no existen como situaciones puras en el mundo real. Son conceptos teóricos relacionados con la luz. Por eso, una fotografía en blanco y negro no copia el mundo: transforma conceptos ópticos en imagen.
+Un ejemplo que usa Flusser es la fotografía en blanco y negro. El blanco y el negro no existen como situaciones puras en el mundo real, sino que son conceptos relacionados con la luz. Entonces, una foto en blanco y negro no copia el mundo directamente, sino que transforma conceptos ópticos en imagen.
 
-Lo mismo ocurre con la fotografía a color. Aunque parece más realista, también está construida desde conceptos técnicos y químicos. Para Flusser, mientras más “natural” parece una fotografía, más puede ocultar su origen técnico y conceptual.
+También pasa algo parecido con la fotografía a color. Aunque parece más realista, igual está construida desde procesos técnicos y químicos. Mientras más “natural” parece una fotografía, más puede esconder su origen técnico.
 
 ```text
 La fotografía parece natural,
 pero está construida por conceptos y aparatos.
 ```
 
-El capítulo también plantea que descifrar una fotografía significa entender las intenciones que están detrás de ella. No basta con mirar lo que aparece en la imagen. Hay que preguntarse qué quiso hacer el fotógrafo, qué permitió la cámara y qué programa técnico está actuando en esa imagen.
-
-Flusser distingue dos fuerzas presentes en toda fotografía:
+Para Flusser, descifrar una fotografía significa mirar más allá de lo que aparece en la imagen. Hay que preguntarse qué quiso hacer el fotógrafo, qué permitió la cámara y qué programa técnico está funcionando detrás.
 
 | Fuerza | Qué busca |
 |---|---|
-| Intención del fotógrafo | Expresar una idea, una mirada o un concepto. |
-| Programa de la cámara | Realizar sus propias posibilidades técnicas. |
+| Intención del fotógrafo | Expresar una mirada, idea o concepto. |
+| Programa de la cámara | Realizar sus posibilidades técnicas. |
 
-La fotografía surge del choque entre estas dos fuerzas. Por eso, una buena crítica fotográfica debería preguntarse hasta qué punto el fotógrafo logró dominar el programa de la cámara, y hasta qué punto la cámara terminó condicionando la imagen.
+La fotografía aparece como el resultado de una tensión entre estas dos fuerzas. Por eso, una buena crítica fotográfica debería preguntarse si el fotógrafo logró dominar el programa de la cámara o si la cámara terminó condicionando demasiado la imagen.
 
-En resumen, Flusser plantea que las fotografías deben ser descifradas. Si las aceptamos de manera pasiva, pueden terminar programando nuestra forma de mirar, pensar y actuar. La fotografía no solo muestra el mundo: también nos enseña cómo verlo.
+En resumen, Flusser plantea que las fotografías deben ser descifradas. Si las aceptamos sin pensarlas, pueden terminar programando nuestra forma de mirar y entender el mundo.
 
 ---
 
-## 🧠 Reflexión personal sobre los capítulos 4 y 5
+## Reflexión personal sobre los capítulos 4 y 5
 
-Estos capítulos me hicieron pensar que una cámara no es solo una herramienta para registrar momentos. Según Flusser, la cámara también decide, limita y guía la forma en que vemos el mundo. Uno puede creer que está tomando una foto libremente, pero en realidad esa libertad está atravesada por las posibilidades que el aparato ya trae programadas.
+Estos capítulos me hicieron pensar que una cámara no es solo una herramienta para guardar recuerdos. Según Flusser, la cámara también guía, limita y condiciona la forma en que vemos el mundo.
 
-Me pareció interesante la idea de que fotografiar sea como un juego. El fotógrafo no solo usa la cámara, sino que juega contra ella, intentando encontrar una imagen distinta dentro de un sistema que ya tiene reglas. Esto se puede relacionar con otros aparatos que usamos en clase, como el escáner 3D o incluso los chips electrónicos. Todos reciben una entrada, procesan algo internamente y entregan una salida.
+Uno puede creer que toma una foto libremente, pero esa libertad está atravesada por las posibilidades que el aparato ya trae. La cámara permite ciertas cosas y otras no, entonces nuestra mirada también se adapta a eso.
+
+Me gustó la idea de que fotografiar sea como jugar contra la cámara. No se trata solo de usar el aparato como viene, sino de intentar llevarlo hacia lugares menos obvios. Esto se puede relacionar con lo que vimos en la charla, porque el escáner 3D también fue usado más allá de su función técnica. En vez de solo medir, se usó para experimentar.
 
 ```text
 Entrada → Aparato → Salida
 ```
 
-La diferencia es que muchas veces no vemos lo que ocurre dentro del aparato. Por eso aparece la idea de la **caja negra**. Sabemos qué entra y qué sale, pero no siempre entendemos el proceso completo. Esto pasa con una cámara, con un escáner, con un celular o con un circuito integrado.
+La idea de caja negra también aparece de nuevo. Sabemos qué entra y qué sale, pero muchas veces no entendemos todo lo que ocurre dentro del aparato. Eso pasa con una cámara, un escáner, un celular o incluso un chip.
 
-También me llamó la atención que Flusser diga que la fotografía no copia directamente la realidad. Aunque una foto parezca objetiva, siempre está construida por decisiones técnicas, conceptos y programas. Esto cambia la forma de mirar imágenes, porque obliga a preguntarse qué hay detrás de ellas.
+También me quedó dando vueltas que una fotografía no copia directamente la realidad. Aunque parezca objetiva, siempre está construida por decisiones, conceptos y procesos técnicos. Esto cambia la forma de mirar imágenes, porque obliga a preguntarse qué hay detrás.
 
-Estos capítulos se conectan con la charla sobre medición y escaneo, porque el escáner también produce una imagen técnica del mundo. No captura la realidad completa, sino una versión hecha de puntos, datos y superficies. Al igual que la cámara, transforma el mundo en una imagen mediada por un aparato.
+En conclusión, me quedo con la idea de que los aparatos no son neutros. Nos ayudan a crear, medir, registrar y escuchar, pero también condicionan la forma en que imaginamos el mundo. Por eso, usar un aparato de forma creativa implica entender sus límites y tratar de empujarlo un poco más allá de lo que normalmente está programado para hacer.
 
-En conclusión, me quedo con la idea de que los aparatos no son neutros. Nos ayudan a crear, medir, registrar y escuchar, pero también condicionan la forma en que imaginamos el mundo. Por eso, usar un aparato de forma creativa implica entender sus límites y tratar de empujarlo más allá de lo que normalmente está programado para hacer.
+---
+
+## Ideas importantes que me quedaron
+
+- Las imágenes técnicas no muestran el mundo de forma neutra.
+- Un aparato puede entenderse como una caja negra.
+- La cámara, el escáner y otros aparatos producen versiones del mundo.
+- Medir no significa necesariamente llegar a una verdad absoluta.
+- Los sistemas que parecen estables también pueden ser inestables.
+- Una nube de puntos reconstruye el mundo de manera fragmentada.
+- El error técnico también puede abrir posibilidades artísticas.
+- El árbol puede entenderse como una red viva.
+- Todo depende de la escala desde donde se mire.
+- El voltaje puede usarse para controlar frecuencia.
+- El 4046 funciona como un VCO.
+- El 4040 puede dividir señales.
+- El multiplexor permite seleccionar entre distintas señales.
+
+---
+
+## Conclusión
+
+Esta clase mezcló teoría, arte y electrónica. Por un lado, seguimos trabajando con Flusser y su idea de que las imágenes técnicas son producidas por aparatos que median nuestra relación con el mundo. Por otro lado, la charla mostró cómo una herramienta de medición, como un escáner 3D, puede transformarse en una herramienta artística.
+
+Me quedó claro que los aparatos no solo registran la realidad, sino que también la interpretan y la reconstruyen. Una cámara, un escáner o un chip no son herramientas totalmente neutras: cada uno tiene una forma propia de procesar lo que recibe.
+
+También fue interesante pensar que la medición puede fallar, deformar o abrir nuevas lecturas. Lo que parece exacto puede estar lleno de inestabilidad, y esa inestabilidad puede transformarse en una posibilidad creativa.
+
+Finalmente, el repaso de chips ayudó a conectar estas ideas con los proyectos prácticos. El control de voltaje, los osciladores y los contadores también funcionan como sistemas con entradas, procesos y salidas. En ese sentido, tanto una cámara como un escáner o un chip pueden entenderse como aparatos que producen nuevas formas de imaginar, escuchar y construir el mundo.
