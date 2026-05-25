@@ -21,6 +21,7 @@ Clase 22 de mayo
 ![proceso](./imagenes/proceso-clase-05.jpeg)
 
 https://proveedoracano.com/blog/transistor-2n2222_012/
+
 http://hyperphysics.phy-astr.gsu.edu/hbasees/Solids/trans.html
 
 ## **Finalizacion de la clase**
@@ -74,8 +75,11 @@ Investigar que es una fenomenologia:
 SEGUN LA RAE:
 
 f. Fil. Teoría de los fenómenos o de lo que aparece.
+
 f. Fil. En Friedrich Hegel, filósofo alemán de comienzos del siglo XIX, dialéctica interna del espíritu que desde el conocimiento sensible a través de las distintas formas de consciencia llega hasta el saber absoluto.
+
 f. Fil. Método desarrollado por Edmund Husserl que, partiendo de la descripción de las entidades y cosas presentes a la intuición intelectual, logra captar la esencia pura de dichas entidades, trascendente a la misma consciencia.
+
 https://dle.rae.es/fenomenolog%C3%ADa
 
 Lo que yo entiendo es que:
