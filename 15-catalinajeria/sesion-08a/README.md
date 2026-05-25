@@ -12,4 +12,3 @@
   <img src="./imagenes/gif01.gif" width="180">
 </p>
 
-✨ Resumen de la clase
