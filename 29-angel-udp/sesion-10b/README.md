@@ -35,7 +35,7 @@ Si la información está siendo procesada, es electrónico.
 | 10| Haremos un mix CD386 para probar como suena con el CD4040/ no funciono/Se evalua posibles fallas. -Habia un cable que no estaba conectado a nada  -Se cambio 3 veces de chip y ninguno funciionaba( no sabemos si eran los chips o era por otra cosa) -Se evalua la posibilidad  de que el parlante este bueno|
 | 11| Desarmamos el CD4040 y el CD386 para hacerlo denuevo y ver que esta fallando |
 
-###Finalizacion de la clase
+### Finalizacion de la clase
 
 Carpeta: Proyecto 02- empezar a escribir nuestro proceso en la carpeta
 
